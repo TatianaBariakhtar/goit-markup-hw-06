@@ -36,18 +36,23 @@ button { cursor: pointer;}
 /*common*/
 .container {
     max-width: 320px;
+    width: 100%;
     padding: 0 16px;
     margin: 0 auto;
 } 
+
+/*____________________________Media common___________________*/
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
+        width: 100%;
         
     }  
 }
 @media screen and (min-width: 1158px) {
     .container {
     max-width: 1158px;
+    width: 100%;
     padding: 0 15px;
     }  
 }
@@ -160,7 +165,7 @@ burger-icon {
          color: #404bbf;
     }
     
-        
+   /*____________________________Media for header___________________*/     
  }
  @media screen and (min-width: 1158px) {
     .header-logo {
@@ -292,11 +297,13 @@ border: none;
     .mobile-contact-info-link:focus {
         color: #404bbf;  
     }
-    .mobile-menu-social { 
+    .mobile-menu-social-list {
         display: flex;
         flex-direction: row; 
         gap: 40px; 
-        align-items: center; }
+        align-items: center;
+    }
+  
     .mobile-menu-social-point {
         width: 40px;
         height: 40px;
@@ -318,6 +325,62 @@ border: none;
     @media screen and (min-width: 768px) {
         .mobile-menu {display: none;
         
-        }
+        } }
+
+        
+/* About */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+ .icons{
+    display: none;
+}
+
+.about-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 72px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.about-item {
+    width: 100%;
+}
+.about-subtitle {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+}
+.about-text {
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #434455;
+}
+ /*____________________________Media for About___________________*/ 
+ 
+ @media screen and (min-width: 768px) {
+    .about-item {
+        width: calc((100% - 24px) / 2);
+    }
     
+    } }
+
+       
     
