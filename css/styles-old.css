@@ -342,24 +342,16 @@
 
 .team-title {
     margin-bottom: 72px;
-    line-height: 1.11;
-    color: #2e2f42;
-    line-height: 1.11;
-    text-transform: capitalize;
+   
+    
+    
+    
 }
 
-.team-list {
-    background-color: #FFFFFF;
-}
 
-.team-name {
-    line-height: 1.2;
-     color: #2e2f42;
-}
 
-.team-role {
-    background-color: #FFFFFF;
-}
+
+
 
 .about-text,
 .team-role,
@@ -372,9 +364,7 @@
     color: #434455;
 }
 
-.team-item {
-    background-color: #FFFFFF;
-}
+
 
 .team-title,
 .portfolio {
