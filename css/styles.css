@@ -524,10 +524,10 @@ background-color: #FFFFFF;
 
 .team-list {
     display: block;
-    margin-bottom: 72px;
-    background-color: #FFFFFF;
-
+ 
 }
+
+
 .team-list :last-child {
     margin-bottom: 0;
 }
@@ -551,6 +551,16 @@ background-color: #FFFFFF;
 
 
 /*___________________Media for team_______________*/
+@media (max-width: 767px) {
+    .team-item:not(:last-child) {
+        margin-bottom: 72px;
+    
+    }
+}
+    
+    .team-icon { gap: 24px;
+}
+
 
 @media screen and (min-width: 768px) {
     .team-item {
@@ -561,7 +571,6 @@ background-color: #FFFFFF;
     .team-list {
         display: flex; 
         flex-wrap: wrap; 
-        width: calc((100% - 24px) / 2); 
         
     }
     
@@ -589,6 +598,10 @@ background-color: #FFFFFF;
         }
         .team-title {
             margin-bottom: 72px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1157px) {
+            .team .container {max-width: 584px;}
         }
         
       
