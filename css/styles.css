@@ -535,9 +535,7 @@ background-color: #FFFFFF;
     
     border-radius: 0px 0px 4px 4px;
 }
-.team-item:not(:last-child) {
-    margin-bottom: 72px;
-  }
+
   .player-team {
     padding: 32px 0;
   }
@@ -556,13 +554,10 @@ background-color: #FFFFFF;
         margin-bottom: 72px;
     
     }
+  
    
 }
     
-    .team-icon { gap: 24px;
-}
-
-
 @media screen and (min-width: 768px) {
     .team-item {
         
@@ -572,8 +567,7 @@ background-color: #FFFFFF;
     .team-list {
         display: flex; 
         flex-wrap: wrap; 
-        gap: 24 px;
-        
+        gap: 64px 24px; 
     }
     
     
