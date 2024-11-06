@@ -904,6 +904,36 @@ background: #fff;
             margin-left: 108px;
             }
         }
+        @media screen and (min-width: 1158px) {
+            .container-footer { 
+                display: flex;
+                align-items: baseline; }
+
+            .footer {
+                 padding: 100px 0;
+            }  
+            .footer-logo {
+                display: inline-block;
+            } 
+            .footer-item {
+                margin-right: 120px;
+            } 
+            .footer-text {
+                max-width: 264px;
+            } 
+            .footer-media {
+   
+                margin-bottom: 16px;
+                        
+            }
+                        
+            .footer-list {
+                display: flex;
+                gap: 16px;
+                        
+            }
+            .footer-soc { margin-right: 80px;}           
+        }
                     
         
 

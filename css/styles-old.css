@@ -412,9 +412,6 @@
     background-color: #2e2f42;
 }
 
-.container-footer { 
-    display: flex;
-    align-items: baseline; }
 
 
 
@@ -423,26 +420,15 @@
 
 
 
-.footer {
-    padding: 100px 0;
-}
-
-.footer-logo {
-    display: inline-block;
-    
-}
 
 
 
-.footer-item {
-    margin-right: 120px;
-}
 
-.footer-text {
-    max-width: 264px;
-    
-  
-}
+
+
+
+
+
 .footer-media {
    
     margin-bottom: 16px;
