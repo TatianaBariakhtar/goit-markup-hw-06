@@ -556,6 +556,7 @@ background-color: #FFFFFF;
         margin-bottom: 72px;
     
     }
+   
 }
     
     .team-icon { gap: 24px;
@@ -564,13 +565,14 @@ background-color: #FFFFFF;
 
 @media screen and (min-width: 768px) {
     .team-item {
-        display: flex; 
+        
         flex-wrap: wrap;
         width: calc((100% - 24px) / 2);
     }
     .team-list {
         display: flex; 
         flex-wrap: wrap; 
+        gap: 24 px;
         
     }
     
@@ -599,11 +601,12 @@ background-color: #FFFFFF;
         .team-title {
             margin-bottom: 72px;
         }
+    }
 
-        @media screen and (min-width: 768px) and (max-width: 1157px) {
+    @media screen and (min-width: 768px) and (max-width: 1157px) {
             .team .container {max-width: 584px;}
         }
-        
+       
       
 
     
