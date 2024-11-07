@@ -340,6 +340,7 @@ border: none;
             rgba(46, 47, 66, 0.7)),
         url(../images/people-office.jpg);
     background-position: center;
+    padding: 72px 0;
 }
 .hero-button {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -350,7 +351,6 @@ border: none;
     max-width: 216px;
     margin: 0 auto;
     margin-bottom: 72px;
-    padding-top: 72px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.12;
@@ -362,7 +362,6 @@ border: none;
     display: block;
     min-width: 169px;
     margin: 0 auto;
-    margin-bottom: 72px;
     height: 56px;
     border: none;
     background-color: #4d5ae5;
@@ -392,8 +391,10 @@ border: none;
         width: 100%;
         min-width: 768px;
         min-height: 436px;
+        padding: 112px 0;
     }
     .hero-title {
+        max-width: 496px
         display: flex;
         justify-content: center;
         align-items: center;
@@ -412,7 +413,6 @@ border: none;
         text-align: center;
     }
     .hero {
-      
         padding: 188px 0;
         margin: 0 auto;
     }
