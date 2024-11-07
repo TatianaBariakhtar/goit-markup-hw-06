@@ -343,9 +343,20 @@ burger-icon {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/heromobone.jpg);
   background-position: center;
   padding: 72px 0;
+}
+@media screen and (min-resolution: 2dppx),
+  (min-resolution: 192dpi),
+  (-webkit-min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/heromobtwo.jpg);
+  }
 }
 .hero-button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -389,6 +400,25 @@ burger-icon {
 /*__________________Media for Hero__________________*/
 
 @media screen and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url(../images/herotabletone.jpg);
+       }
+      @media screen and (min-resolution: 2dppx),
+        (min-resolution: 192dpi),
+        (-webkit-min-device-pixel-ratio: 2) {
+        .hero {
+          background-image: linear-gradient(
+              rgba(46, 47, 66, 0.7),
+              rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/herotablettwo.jpg);
+        }
+      }
   .hero {
     width: 100%;
     min-width: 768px;
@@ -406,7 +436,26 @@ burger-icon {
   }
 }
 @media screen and (min-width: 1158px) {
-  .hero-title {
+    .hero {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url(../images/people-office.jpg);
+       }
+      @media screen and (min-resolution: 2dppx),
+        (min-resolution: 192dpi),
+        (-webkit-min-device-pixel-ratio: 2) {
+        .hero {
+          background-image: linear-gradient(
+              rgba(46, 47, 66, 0.7),
+              rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/herodesktwo.jpg);
+        }
+      }
+    .hero-title {
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
