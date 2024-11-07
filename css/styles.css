@@ -394,6 +394,7 @@ border: none;
         min-width: 768px;
         min-height: 436px;
         padding: 112px 0;
+        
     }
     .hero-title {
         max-width: 496px;
@@ -402,7 +403,6 @@ border: none;
         align-items: center;
         font-size: 56px;
         line-height: 1.07;
-        padding-top: 112px;
         margin-bottom: 36px;
         
        
@@ -417,6 +417,7 @@ border: none;
     .hero {
         padding: 188px 0;
         margin: 0 auto;
+        max-width: 1440px;
     }
     .hero-title {
        max-width: 496px;
@@ -485,13 +486,13 @@ color: #434455;
     }
     .about-list {
         display: flex;
-        gap: 24px;
+        gap: 72px 24px;
     }
     
     } 
 
     @media screen and (min-width: 1158px) {
-
+      
         .about-list {
             display: flex;
             gap: 24px;
@@ -503,10 +504,13 @@ color: #434455;
         
         .about-item {
             width: calc((100% - 72px) / 4);
+
         }
         
         .about-subtitle {
             margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 20px;
         }
         .icon-about {
             display: flex;
@@ -541,6 +545,7 @@ color: #434455;
   .team {
     background-color: #f4f4fd;
     padding-bottom: 72px;
+    width: 296px;
     }
     .team-title {
 font-weight: 700;
@@ -552,8 +557,6 @@ color: #2e2f42;
 display: flex;
 align-items: center;
 justify-content: center;
-padding-top: 96px;
-padding-bottom: 72px;
 text-transform: capitalize;
   }
   .team-name {
@@ -651,8 +654,13 @@ background-color: #FFFFFF;
 @media (max-width: 767px) {
     .team-item:not(:last-child) {
         margin-bottom: 72px;
+    }   
+    .team {
+        padding-top: 96px;
+        padding-bottom: 96px;
         
-    
+    } 
+   
     }
   
    
@@ -704,10 +712,8 @@ background-color: #FFFFFF;
  /*_________________Portfolio_______________*/
  
  .portfolio {
-    margin-top: 96px;
-    margin-bottom: 96px;
-    margin-left: 16px;
-    margin-right: 16px;
+   padding-top: 96px;
+   padding-bottom: 96px;
  }
  .portfolio-title {
     display: flex;
@@ -855,7 +861,7 @@ background: #fff;
 
     /*_______________________Footer_________________*/
     .footer {
-        padding: 96px 16px;
+        padding: 96px 0;
         background-color: #2e2f42;
         } 
 
@@ -863,9 +869,14 @@ background: #fff;
         display: flex;
         flex-wrap: wrap;
         gap: 72px 24px;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-item {
+        text-align: center;
     }
     .footer-logo {
-        display: flex;
+        display: inline-block;
         justify-content: flex-start;
         margin-bottom: 16px;
         font-family: "Raleway", sans-serif;
@@ -896,7 +907,7 @@ background: #fff;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #FFFFFF;
-        display: flex;
+        text-align: center;
         justify-content: flex-start;
         margin-bottom: 16px;
         }
@@ -911,7 +922,7 @@ background: #fff;
             height: 40px;
         
         }
-        .footer-icon-link {
+    .footer-icon-link {
             width: 100%;
             height: 100%;
             background-color: #4d5ae5;
@@ -922,18 +933,18 @@ background: #fff;
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
         }  
-        .footer-icon-link:hover {
+    .footer-icon-link:hover {
             background-color: #31d0aa; 
         
         }
-        .footer-icon-link:focus {
+    .footer-icon-link:focus {
             background-color: #31d0aa; 
         }
         
-        .footer-icon {fill: #f4f4fd} 
+    .footer-icon {fill: #f4f4fd} 
 
-        .subscribe { 
-           
+    .subscribe { 
+            text-align: center;
             justify-content: center;
             margin-bottom: 16px;
             font-weight: 500;
@@ -943,9 +954,12 @@ background: #fff;
             color: #ffffff;  
 
         }
+        .form-subscribe {
+            flex-direction: column;
+        }    
 
       
-        .input-email {
+    .input-email {
             display: flex;
             justify-content: center;
             width: 288px; 
@@ -963,7 +977,7 @@ background: #fff;
             flex-direction: column;
         
         }   
-        .button-subscribe {
+    .button-subscribe {
             align-items: center;   
             min-width: 165px;
             height: 40px; 
@@ -982,7 +996,7 @@ background: #fff;
           
         }
 
-        .icon-button {
+    .icon-button {
             margin-left: 16px;
         }
 
@@ -1000,20 +1014,37 @@ background: #fff;
             } 
 
             .footer {
-                padding-left: 108px;
+                
                 flex-direction: row;
                 flex-wrap: wrap;
             }
             .input-email {
              width: 264px; }
-          
-        }
+
+            .container-footer {
+                justify-content: flex-start;
+                align-items: flex-start;
+                max-width: 584px;
+            }
+
+            .footer-item {
+                text-align: left;
+            }
+            .footer-media {
+                text-align: left;
+            }
+            .subscribe {
+                text-align: left;
+            }
+            .form-subscribe {flex-direction: row;}
+
         @media screen and (min-width: 1158px) {
             .container-footer { 
                 display: flex;
                 align-items: baseline;
                 flex-wrap: nowrap;
                 gap: unset;
+                max-width: 1158px;
             }
 
             .footer {
