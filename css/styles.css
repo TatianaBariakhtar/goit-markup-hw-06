@@ -666,6 +666,10 @@ burger-icon {
     flex-wrap: wrap;
     gap: 64px 24px;
   }
+  .team {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
 }
 @media screen and (min-width: 1158px) {
   .team {
@@ -1292,9 +1296,7 @@ placeholder {
   cursor: pointer;
   background-color: #4d5ae5;
   border: none;
-  border-radius: 4px;
-  width: 408px;
-  min-height: 584px;
+  border-radius: 4px; 
 }
 
 .input-name:focus + svg {
