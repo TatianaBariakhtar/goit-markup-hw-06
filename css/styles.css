@@ -545,7 +545,6 @@ color: #434455;
   .team {
     background-color: #f4f4fd;
     padding-bottom: 72px;
-    width: 296px;
     }
     .team-title {
 font-weight: 700;
@@ -558,6 +557,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 text-transform: capitalize;
+margin-bottom: 72px;
   }
   .team-name {
 font-weight: 500;
@@ -568,7 +568,6 @@ text-align: center;
 color: #2e2f42;
 display: flex;
 justify-content: center;
-padding-top: 32px;
 margin-bottom: 8;
   }
 .team-role {
@@ -651,6 +650,14 @@ background-color: #FFFFFF;
 
 
 /*___________________Media for team_______________*/
+
+@media screen and (max-width: 767px) {
+    .team .container {
+        max-width: 296px;
+    }
+}
+
+
 @media (max-width: 767px) {
     .team-item:not(:last-child) {
         margin-bottom: 72px;
@@ -664,7 +671,7 @@ background-color: #FFFFFF;
     }
   
    
-}
+
     
 @media screen and (min-width: 768px) {
     .team-item {
